@@ -1,0 +1,251 @@
+/* ============================================
+   RESUME STYLESHEET
+   Optimized for Print / PDF Export
+   ============================================ */
+
+:root {
+  --primary: #0f172a;     /* Deep slate for text */
+  --secondary: #334155;   /* Lighter slate for secondary text */
+  --accent: #0284c7;      /* Professional blue for highlights */
+  --border: #cbd5e1;
+  --bg: #ffffff;
+  
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--primary);
+  background: #f8fafc;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Page wrapper to simulate A4 paper on screen */
+.resume-wrapper {
+  max-width: 850px;
+  margin: 40px auto;
+  background: var(--bg);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  padding: 50px 60px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+.header {
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+}
+
+.name {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 0.9rem;
+  color: var(--secondary);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ============================================
+   SUMMARY
+   ============================================ */
+.summary {
+  font-size: 0.95rem;
+  color: var(--primary);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+/* ============================================
+   SECTIONS
+   ============================================ */
+.section {
+  margin-bottom: 24px;
+}
+
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--primary);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 4px;
+  margin-bottom: 16px;
+}
+
+/* ============================================
+   SKILLS
+   ============================================ */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  font-size: 0.9rem;
+}
+
+.skill-category strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--primary);
+}
+
+.skill-category p {
+  color: var(--secondary);
+}
+
+/* ============================================
+   EXPERIENCE / JOURNEY
+   ============================================ */
+.job {
+  margin-bottom: 20px;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+
+.job-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.job-company {
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.job-date {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+.job-location {
+  font-size: 0.85rem;
+  color: var(--secondary);
+  font-style: italic;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.job-bullets {
+  list-style-type: none;
+  font-size: 0.9rem;
+  color: var(--primary);
+}
+
+.job-bullets li {
+  position: relative;
+  padding-left: 14px;
+  margin-bottom: 6px;
+}
+
+.job-bullets li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: bold;
+}
+
+/* ============================================
+   PROJECTS
+   ============================================ */
+.project {
+  margin-bottom: 16px;
+}
+
+.project-header {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.project-name {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.project-tech {
+  font-size: 0.8rem;
+  color: var(--secondary);
+  font-family: monospace;
+}
+
+/* ============================================
+   EDUCATION
+   ============================================ */
+.edu-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.edu-degree {
+  font-weight: 600;
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+@media print {
+  body {
+    background: white;
+  }
+  
+  .resume-wrapper {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  /* Hide print UI if any */
+  .no-print {
+    display: none !important;
+  }
+}
