@@ -3,183 +3,234 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MohammedSohail Patel - Resume</title>
-  
+  <title>MohammedSohail Patel — Resume</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="resume.css">
 </head>
 <body>
 
-  <!-- Print Button (Hidden when actually printing) -->
-  <div class="no-print" style="text-align: center; padding: 20px; background: #e2e8f0;">
-    <button onclick="window.print()" style="padding: 10px 20px; font-size: 16px; cursor: pointer; background: #0284c7; color: white; border: none; border-radius: 6px; font-weight: 600;">
-      🖨️ Print to PDF
-    </button>
-    <p style="margin-top: 10px; font-size: 14px; color: #475569;">
-      Tip: For the best result, set Margins to "None" and turn off "Headers and footers" in the print dialog.
-    </p>
+  <!-- Print Control Bar (hidden when printing) -->
+  <div class="print-bar no-print">
+    <div class="print-bar-inner">
+      <span class="print-bar-label">📄 MohammedSohail Patel — Resume</span>
+      <div class="print-bar-actions">
+        <a href="index.html" class="btn-back">← Back to Portfolio</a>
+        <button onclick="window.print()" class="btn-print">🖨️ Save as PDF</button>
+      </div>
+    </div>
+    <p class="print-tip">Tip: In print dialog → set Margins to <strong>None</strong> and disable <strong>Headers &amp; Footers</strong> for best result.</p>
   </div>
 
-  <div class="resume-wrapper">
-    
-    <!-- HEADER -->
+  <div class="resume-page">
+
+    <!-- ═══ HEADER ═══ -->
     <header class="header">
-      <h1 class="name">MohammedSohail Patel</h1>
-      <h2 class="title">AI-Augmented Software Engineer | Full-Stack Developer</h2>
-      
-      <div class="contact-info">
-        <div class="contact-item">
-          <span>📧</span> <a href="mailto:mohammedsohail.dev@outlook.com">mohammedsohail.dev@outlook.com</a>
-        </div>
-        <div class="contact-item">
-          <span>📱</span> +91 95748 51640
-        </div>
-        <div class="contact-item">
-          <span>📍</span> India (Remote)
-        </div>
-        <div class="contact-item">
-          <span>🐙</span> <a href="https://github.com/M5soh990" target="_blank">github.com/M5soh990</a>
+      <div class="header-left">
+        <h1 class="name">MohammedSohail Patel</h1>
+        <p class="tagline">Software Engineer &nbsp;·&nbsp; Flutter / Mobile &nbsp;·&nbsp; Backend &nbsp;·&nbsp; AI-Augmented Development</p>
+      </div>
+      <div class="header-right">
+        <div class="contact-grid">
+          <a href="mailto:mohammedsohail.dev@outlook.com" class="contact-item">
+            <span class="icon">✉</span>
+            <span>mohammedsohail.dev@outlook.com</span>
+          </a>
+          <span class="contact-item">
+            <span class="icon">📱</span>
+            <span>+91 95748 51640</span>
+          </span>
+          <span class="contact-item">
+            <span class="icon">📍</span>
+            <span>India &nbsp;·&nbsp; Open to Remote &amp; Relocation</span>
+          </span>
+          <a href="https://github.com/M5soh990" target="_blank" rel="noopener" class="contact-item">
+            <span class="icon">⌥</span>
+            <span>github.com/M5soh990</span>
+          </a>
+          <a href="https://social-platform-256b2.web.app" target="_blank" rel="noopener" class="contact-item">
+            <span class="icon">🌐</span>
+            <span>mohammedsohail.dev (Portfolio)</span>
+          </a>
         </div>
       </div>
     </header>
 
-    <!-- SUMMARY -->
-    <section class="summary">
-      <p>
-        Software Engineer with a highly analytical, problem-solving mindset. Combines a strong grasp of architectural fundamentals (PostgreSQL, Redis, RabbitMQ) with advanced AI workflows (Cursor, Claude, Gemini) to rapidly prototype and build production-ready applications. Capable of executing at a senior level through fast learning and AI leverage. Recently architected and developed two enterprise-grade mobile applications with 40,000+ lines of clean, zero-warning Dart code.
+    <div class="divider accent-line"></div>
+
+    <!-- ═══ PROFESSIONAL SUMMARY ═══ -->
+    <section class="section">
+      <h2 class="section-title">Profile</h2>
+      <p class="summary-text">
+        Software Engineer with <strong>3+ years of combined professional and independent experience</strong>, specialising in Flutter/Dart mobile engineering and .NET backend systems. After a structured period of personal growth and self-directed learning, I returned to engineering with renewed focus — rapidly designing and building two production-grade applications (<em>FairService</em> and <em>Ibadah+</em>) exceeding 40,000 lines of clean, zero-warning Dart code. I leverage AI tooling (Cursor, Claude, Gemini) as a force-multiplier, not a crutch — combining it with strong architectural instincts to deliver enterprise-quality software with speed and precision. Actively seeking backend, mobile, or full-stack roles — remote, on-site, or international.
       </p>
     </section>
 
-    <!-- SKILLS -->
+    <!-- ═══ SKILLS ═══ -->
     <section class="section">
-      <h3 class="section-title">Technical Expertise</h3>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <strong>AI-Augmented Workflows</strong>
-          <p>Cursor IDE, Claude 3.5 Sonnet, Gemini Pro, Rapid Prototyping, Prompt Engineering</p>
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-table">
+        <div class="skill-row">
+          <span class="skill-label">Mobile Engineering</span>
+          <span class="skill-value">Flutter, Dart, BLoC, Provider, Hive (NoSQL), Firebase (Auth, Firestore, Storage, FCM), 60 FPS UI optimisation</span>
         </div>
-        <div class="skill-category">
-          <strong>Applied Development & Tools</strong>
-          <p>Flutter, Dart, C#, .NET Core, Firebase, Hive, BLoC, Git, VS Code, Postman, CI/CD</p>
+        <div class="skill-row">
+          <span class="skill-label">Backend &amp; APIs</span>
+          <span class="skill-value">C#, .NET Core, REST APIs, WebSockets, PostgreSQL, Microservices design, GDPR compliance</span>
         </div>
-        <div class="skill-category" style="grid-column: 1 / -1;">
-          <strong>System Architecture (Theoretical & AI-Guided Implementation)</strong>
-          <p>PostgreSQL, Elasticsearch, RabbitMQ, Redis, Celery, KendoUI, WebSockets, Microservices, GDPR Compliance</p>
+        <div class="skill-row">
+          <span class="skill-label">AI &amp; Productivity</span>
+          <span class="skill-value">Cursor IDE, Claude, Gemini Pro — architecture-led prompt engineering, AI-assisted code generation &amp; review</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Infrastructure / Theory</span>
+          <span class="skill-value">Redis, RabbitMQ, Celery, Elasticsearch, Geohashing, KendoUI — strong conceptual grasp</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Tooling &amp; Workflow</span>
+          <span class="skill-value">Git, GitHub, VS Code, Postman, Agile / Scrum, CI/CD pipelines, Firebase Hosting</span>
         </div>
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
+    <!-- ═══ PROFESSIONAL EXPERIENCE ═══ -->
     <section class="section">
-      <h3 class="section-title">Professional Journey</h3>
-      
+      <h2 class="section-title">Professional Experience</h2>
+
       <div class="job">
         <div class="job-header">
-          <span class="job-title">Intensive App Development & Upskilling</span>
-          <span class="job-date">Oct 2025 – Present</span>
+          <div class="job-meta">
+            <span class="job-title">Independent Software Engineer &amp; Product Developer</span>
+            <span class="job-company">Self-Directed</span>
+          </div>
+          <span class="job-date">Mar 2023 – Present</span>
         </div>
-        <span class="job-location">Independent</span>
-        <ul class="job-bullets">
-          <li>Returned from international sabbatical and immediately began taking intensive courses (Udemy/Coursera) to revive and modernize technical skill set.</li>
-          <li>Applied new knowledge by architecting two massive production-grade apps (FairService & Ibadah+) from scratch in a matter of months.</li>
-          <li>Mastered AI-assisted development tools (Cursor, Claude) to write over 40,000 lines of highly optimized, zero-warning Dart code.</li>
+        <p class="job-sublabel">India (Remote / Independent)</p>
+        <ul class="bullets">
+          <li>Spent the first phase (2023–2025) in deep self-study — rebuilding and expanding expertise across Flutter, system design, and modern backend architecture via structured Udemy/Coursera programmes. Simultaneously conceptualised two product ideas.</li>
+          <li>Took a calculated international sabbatical (Feb–Oct 2025) to Zambia and Malawi, gaining first-hand experience of cross-cultural collaboration, resilience, and operating in resource-constrained environments — skills that directly inform pragmatic engineering decisions.</li>
+          <li>Upon return, immediately translated two years of research into production code: built <em>FairService</em> and <em>Ibadah+</em> from the ground up, delivering 40,000+ lines of zero-warning Dart in under 6 months using AI-assisted development workflows.</li>
+          <li>Architected multi-tier local-first data synchronisation, geolocation caching systems, and real-time inventory engines entirely independently.</li>
         </ul>
       </div>
 
       <div class="job">
         <div class="job-header">
-          <span class="job-title">Global Exploration Sabbatical</span>
-          <span class="job-date">Feb 2025 – Oct 2025</span>
-        </div>
-        <span class="job-location">Zambia & Malawi, Africa</span>
-        <ul class="job-bullets">
-          <li>Took a calculated sabbatical to travel and experience diverse cultures, gaining profound life experience, adaptability, and resilience.</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <div class="job-header">
-          <span class="job-title">Associate Software Engineer</span>
-          <span class="job-company">Casepoint Pvt. Ltd.</span>
+          <div class="job-meta">
+            <span class="job-title">Associate Software Engineer</span>
+            <span class="job-company">Casepoint Pvt. Ltd.</span>
+          </div>
           <span class="job-date">Feb 2022 – Mar 2023</span>
         </div>
-        <span class="job-location">Surat, India</span>
-        <ul class="job-bullets">
-          <li>Developed and optimized backend services using C# and .NET, improving system response time by 25%.</li>
-          <li>Designed PostgreSQL schemas for features serving 5,000+ concurrent users.</li>
-          <li>Participated in Agile methodology with code reviews and incident response, reducing MTTR by 40%.</li>
+        <p class="job-sublabel">Surat, Gujarat, India</p>
+        <ul class="bullets">
+          <li>Developed and optimised backend services in <strong>C# / .NET Core</strong>, achieving a measurable <strong>25% improvement in system response time</strong> on a high-throughput legal-tech platform.</li>
+          <li>Designed and maintained <strong>PostgreSQL schemas</strong> for features serving <strong>5,000+ concurrent users</strong>, balancing query performance and data integrity.</li>
+          <li>Collaborated in Agile/Scrum sprints, contributing to code reviews and incident response processes that reduced Mean Time To Recovery (MTTR) by <strong>40%</strong>.</li>
+          <li>Gained professional exposure to <strong>Elasticsearch, RabbitMQ, Redis, and KendoUI</strong> in a production environment, reinforcing theoretical understanding with real-world context.</li>
         </ul>
       </div>
 
       <div class="job">
         <div class="job-header">
-          <span class="job-title">WordPress Developer</span>
-          <span class="job-company">Target Media and Press Release Ltd.</span>
+          <div class="job-meta">
+            <span class="job-title">WordPress Developer</span>
+            <span class="job-company">Target Media and Press Release Ltd.</span>
+          </div>
           <span class="job-date">Dec 2020 – Mar 2021</span>
         </div>
-        <span class="job-location">Mumbai, India</span>
-        <ul class="job-bullets">
-          <li>Assisted in developing and maintaining responsive WordPress websites.</li>
-          <li>Improved site performance and user experience through layout and optimization updates.</li>
+        <p class="job-sublabel">Mumbai, Maharashtra, India</p>
+        <ul class="bullets">
+          <li>Developed and maintained responsive, performance-optimised WordPress websites for media clients.</li>
+          <li>Improved page load speed and UX through layout restructuring, caching plugins, and image optimisation — contributing to measurable improvements in bounce rate and session duration.</li>
         </ul>
       </div>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- ═══ KEY PROJECTS ═══ -->
     <section class="section">
-      <h3 class="section-title">Key Projects</h3>
-      
+      <h2 class="section-title">Key Projects</h2>
+
       <div class="project">
         <div class="project-header">
-          <span class="project-name">FairService - Enterprise Command & Control Engine</span>
-          <span class="project-tech">[ Flutter, Firebase, BLoC ]</span>
+          <span class="project-name">FairService</span>
+          <span class="project-tech">Flutter · Firebase · BLoC · Dart</span>
         </div>
-        <ul class="job-bullets">
-          <li>Engineered 12+ operational pages and 40+ custom reusable UI components.</li>
-          <li>Developed an Intelligence Report Engine and Tactical Logistics system with real-time inventory tracking.</li>
+        <p class="project-tagline">Enterprise command &amp; control engine for field service operations</p>
+        <ul class="bullets">
+          <li>Single-handedly designed and built a full enterprise mobile application covering <strong>12+ operational modules</strong> (scheduling, dispatch, inventory, reporting) and <strong>40+ custom reusable UI components</strong>.</li>
+          <li>Engineered a real-time <strong>Tactical Logistics &amp; Inventory Tracking</strong> system with Firestore listeners for live state synchronisation across multiple field operatives.</li>
+          <li>Built an <strong>Intelligence Report Engine</strong> that aggregates field data and generates structured operational reports, reducing manual reporting overhead by design.</li>
         </ul>
       </div>
 
       <div class="project">
         <div class="project-header">
-          <span class="project-name">Ibadah+ - Production-Grade Spiritual Ecosystem</span>
-          <span class="project-tech">[ Flutter, Hive NoSQL, Firebase ]</span>
+          <span class="project-name">Ibadah+</span>
+          <span class="project-tech">Flutter · Hive NoSQL · Firebase · Geohashing</span>
         </div>
-        <ul class="job-bullets">
-          <li>Achieved consistent 60 FPS UI performance while managing a local-first reactive engine with Hive and Firestore synchronization.</li>
-          <li>Engineered a 3-tier location caching system using Geohashing and a GDPR-compliant data management system.</li>
+        <p class="project-tagline">Production-grade spiritual companion application with offline-first architecture</p>
+        <ul class="bullets">
+          <li>Achieved sustained <strong>60 FPS UI performance</strong> on mid-range devices by implementing local-first reactive data management with <strong>Hive</strong> and background Firestore synchronisation.</li>
+          <li>Designed a <strong>3-tier location caching system</strong> using Geohashing to serve accurate, performant location-based features (Qibla, prayer times) with minimal API calls.</li>
+          <li>Implemented a fully <strong>GDPR-compliant data management layer</strong>, including user data export, selective deletion, and consent management — production-ready by design.</li>
         </ul>
       </div>
     </section>
 
-    <!-- EDUCATION -->
+    <!-- ═══ EDUCATION ═══ -->
     <section class="section">
-      <h3 class="section-title">Education & Certifications</h3>
-      
-      <div class="edu-item">
-        <div>
+      <h2 class="section-title">Education</h2>
+
+      <div class="edu-row">
+        <div class="edu-details">
           <span class="edu-degree">Master of Computer Applications (MCA)</span>
-          <div style="font-size: 0.85rem; color: var(--secondary);">Data Structures, Algorithms, Database Management</div>
+          <span class="edu-uni">Gujarat Technological University (GTU)</span>
+          <span class="edu-focus">Data Structures, Algorithms, DBMS, Software Engineering</span>
         </div>
         <span class="job-date">2018 – 2020</span>
       </div>
 
-      <div class="edu-item">
-        <div>
+      <div class="edu-row">
+        <div class="edu-details">
           <span class="edu-degree">Bachelor of Science in Information Technology (BSc IT)</span>
+          <span class="edu-uni">Veer Narmad South Gujarat University (VNSGU)</span>
         </div>
         <span class="job-date">2015 – 2018</span>
       </div>
+    </section>
 
-      <div style="margin-top: 12px; font-size: 0.9rem;">
-        <strong>Certifications:</strong> Full-Stack Development: Django REST Framework & Flutter (Udemy), Flutter & Dart - The Complete Guide (Udemy).
+    <!-- ═══ CERTIFICATIONS ═══ -->
+    <section class="section">
+      <h2 class="section-title">Certifications</h2>
+      <ul class="cert-list">
+        <li><strong>Full-Stack Development: Django REST Framework &amp; Flutter</strong> — Udemy</li>
+        <li><strong>Flutter &amp; Dart — The Complete Guide</strong> — Udemy</li>
+        <li><strong>System Design Fundamentals</strong> — Self-directed study (Coursera)</li>
+      </ul>
+    </section>
+
+    <!-- ═══ ADDITIONAL ═══ -->
+    <section class="section section-last">
+      <h2 class="section-title">Additional</h2>
+      <div class="additional-grid">
+        <div>
+          <span class="add-label">Languages</span>
+          <span class="add-value">English (Professional), Hindi (Native), Urdu (Native)</span>
+        </div>
+        <div>
+          <span class="add-label">Availability</span>
+          <span class="add-value">Immediate — Open to Remote, On-Site, or International Relocation</span>
+        </div>
+        <div>
+          <span class="add-label">Interests</span>
+          <span class="add-value">System Design, Cross-cultural experiences, Productivity tooling, Open-source</span>
+        </div>
       </div>
     </section>
 
-  </div>
+  </div><!-- /resume-page -->
 
 </body>
 </html>
