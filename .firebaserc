@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "social-platform-256b2"
-  }
+  },
+  "targets": {
+    "emules-corp": {
+      "hosting": {
+        "portfolio": [
+          "msp-portfolio"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
