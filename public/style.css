@@ -2,30 +2,30 @@
    DESIGN SYSTEM & CSS VARIABLES
    ============================================ */
 :root {
-  /* Colors - Dark Theme */
-  --bg-primary: #0a0e17;
-  --bg-secondary: #111827;
-  --bg-card: rgba(17, 24, 39, 0.6);
-  --bg-glass: rgba(255, 255, 255, 0.03);
-  --bg-glass-hover: rgba(255, 255, 255, 0.06);
-  --border-glass: rgba(255, 255, 255, 0.08);
-  --border-glass-hover: rgba(255, 255, 255, 0.15);
+  /* Colors - Light Theme */
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --bg-card: rgba(255, 255, 255, 0.8);
+  --bg-glass: rgba(0, 0, 0, 0.02);
+  --bg-glass-hover: rgba(0, 0, 0, 0.05);
+  --border-glass: rgba(0, 0, 0, 0.05);
+  --border-glass-hover: rgba(0, 0, 0, 0.1);
 
   /* Accent Gradient */
-  --accent-1: #06b6d4;       /* Cyan */
-  --accent-2: #3b82f6;       /* Blue */
-  --accent-3: #8b5cf6;       /* Violet */
-  --accent-4: #ec4899;       /* Pink */
+  --accent-1: #0284c7;       /* Cyan-Blue */
+  --accent-2: #2563eb;       /* Blue */
+  --accent-3: #7c3aed;       /* Violet */
+  --accent-4: #db2777;       /* Pink */
   --gradient-primary: linear-gradient(135deg, var(--accent-1), var(--accent-2));
   --gradient-accent: linear-gradient(135deg, var(--accent-2), var(--accent-3));
   --gradient-warm: linear-gradient(135deg, var(--accent-3), var(--accent-4));
   --gradient-full: linear-gradient(135deg, var(--accent-1), var(--accent-2), var(--accent-3));
 
   /* Text */
-  --text-primary: #f1f5f9;
-  --text-secondary: #94a3b8;
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
   --text-muted: #64748b;
-  --text-accent: var(--accent-1);
+  --text-accent: var(--accent-2);
 
   /* Typography */
   --font-heading: 'Outfit', sans-serif;
